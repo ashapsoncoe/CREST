@@ -6,7 +6,9 @@ CREST is written in Python and makes extensive use of the Neuroglancer Python AP
 
 # Installing CREST - Windows
 
-For Windows, no installation is necessary - CREST is available as a standalone executable file, which can be downloaded from this repository. 
+For Windows, no installation is necessary - CREST is available as a standalone executable file, which can be downloaded from here: 
+
+https://storage.cloud.google.com/lichtman-goog/Alex/CREST_v0.15.exe
  
 
 # Installing CREST - Mac
@@ -199,3 +201,9 @@ For each cell meeting the specified criteria, the distribution of connection str
 At any point in either of the Network Exploration modes described above, the state can be saved to local storage by clicking the 'Save Current State', which will allow the user to save the neuroglancer state in the format of a json file. The current figure displayed in the CREST console will also be saved.
 
 Any saved state can subsequently be re-loaded (but only to be viewed - further navigation is not possible), along with its associated figure, by clicking the 'Load Previous State' button.
+
+# Source files
+
+Python scripts used to make proofreading and network path browsing databases are available in this repository
+The current CREST python script is available in this respository
+The CREST standalone executable was created using pyinstaller from the CREST python script, using the spec file included in this repository
