@@ -1,7 +1,7 @@
 # CREST
 Connectome Reconstruction and Exploration Simple Tool, or CREST, is a simple GUI tool that enables users to (1) proofread biological objects and (2) identify individual network pathways, connections and cell types of interest, in the Neuroglancer interface.
 
-CREST is written in python and makes extensive use of the Neuroglancer Python API.
+CREST is written in Python and makes extensive use of the Neuroglancer Python API.
  
 
 # Installing CREST - Windows
@@ -134,9 +134,9 @@ Once the CREST user interface has launched, the user should take the following s
 
 (1) Click the 'Select Synaptic Database' button to select a downloaded synapse assembly database. This will populate the Cell Types, Brain Regions and Synaptic Inclusion Criteria columns.
 
-(2) Each synapse in the dataset will have an excitatory/inhibitory type, a pre-synaptic structure (mostly axonal) and a post-synaptic structure (mostly dendritic). The user must decide what he/she wants to consider as a legitimate synapse for the purposes of exploring the dataset, and select the individual criteria in each of these three categories under the 'Synaptic Inclusion Criteria' columns.
+(2) Each synapse in the dataset will have an excitatory/inhibitory type, a pre-synaptic structure (mostly axonal) and a post-synaptic structure (mostly dendritic). The user must decide what he/she wants to consider as a legitimate synapse for the purposes of exploring the dataset, and select the individual criteria in each of these three categories under the 'Synaptic Inclusion Criteria' columns. If none are selected, then all will be considered to have been selected in each catergory.
 
-(3) Every biological object in the dataset will have a cell type (which may include neurite fragments), as well as a brain region (for example, a cortical layer). The user must then indicate which objects they want to include in their subsequent query, by selecting desired types and regions under the 'Cell Types' and 'Brain Regions' columns.
+(3) Every biological object in the dataset will have a cell type (which may include neurite fragments), as well as a brain region (for example, a cortical layer). The user must then indicate which objects they want to include in their subsequent query, by selecting desired types and regions under the 'Cell Types' and 'Brain Regions' columns. If none are selected, then all will be considered to have been selected in both cases.
 
 # Network Exploration in CREST - Launching a Network Path Exploration session
 
@@ -150,7 +150,7 @@ Additonally, the user may further refine the connectome generated, by specifying
 
 Once these settings have been set, the user should click the button 'Start Network Path Exploration', upon which CREST will generate the connectome meeting the criteria set above. 
 
-CREST will then open a neuroglancer link in your default browser (chrome is reccomended for your default browser choice) displaying all the cells giving rise to a path of at least the length specified by the 'Min Path Length From Displayed Cells' value. If the user wishes to see all of the cells included in the generated connectome, they can set this value to 1.
+CREST will then open a neuroglancer link in your default browser (chrome is recommended for your default browser choice) displaying all the cells giving rise to a path of at least the length specified by the 'Min Path Length From Displayed Cells' value. If the user wishes to see all of the cells included in the generated connectome, they can set this value to 1.
 
 Upon first ever use of CREST on a given machine, you will be required to log in to neuroglancer with a google account and refresh the page.
 
@@ -174,4 +174,25 @@ SHIFT + LEFT CLICK on a given cell:
 - Upon identifying an individual path of interest, the user can press the DOWN arrow key to view each cell member of the path one at a time, in order, navigating again with the RIGHT and LEFT arrow keys. UP now returns the user to moving through individual paths rather than members of the given path.
 
 In each of these modes, the part of the connectome being explored is continously plotted in a simplified 2D form in the 'Figures' tab of the CREST GUI. Each cell is represented by a circle, connections between them are represeneted by arrows, with the thickness of the arrow proportional to the number of synapses (strength) of that connection. The initial cell selected is shown as an orange circle, and each circle has a number indicating its post-synaptic (positive numbers) or pre-synaptic (negative numbers) generation with respect to the initially selected cell. Cells and connections currently being displayed in the neuroglancer window are shown in black, with their segment ID displayed next to them, whereas those cells and connections not currently displayed are greyed out.
+
+The key C will reset the session.
+
+# Network Exploration in CREST - Launching a Sequential Cell Exploration session
+
+The Sequential Cell Exploration mode allows the user to select all cells / biological objects meeting the region and type criteria specified (see 'Network Exploration in CREST - Selecting synapse and cell types'), as well as several additional criteria related to the pre-synaptic and post-synaptic connectivity of the cell:
+
+(1) Min Total Synapses Given - only cells making at least this many outgoing synapses in total will be included
+(2) Min Total Synapses Received - only cells receiving at least this many incoming synapses in total will be included
+(3) Min Synapses To At Least One Partner - only cells making at least this many synapses with at least one post-synaptic partner will be included
+(4) Min Synapses From At Least One Partner - only cells receiving at least this many synapses with at least one pre-synaptic partner will be included
+
+Note that these criteria will make use of counts of synpases, which in turn are determined by what the user wishes to include as a 'legitimate synapse' through the Synaptic Inclusion Criteria (see 'Network Exploration in CREST - Selecting synapse and cell types').
+
+For any cell to be included, it must meet each one of these connectivity criteria, as well as the Cell Type and Brain Region criteria specified under these columns.
+
+Once all the criteria are set to the user's satisfaction, he/she should click the button 'Explore Connections of Cells Meeting Specified Criteria', upon which CREST will identify all cells / biological objects meeting these criteria and open a neuroglancer link in your default browser (chrome is recommended for your default browser choice) showing the first of these cells (the order is random). Note: Upon first ever use of CREST on a given machine, you will be required to log in to neuroglancer with a google account and refresh the page.
+
+Alternatively, the user may disregard the Cell Type, Brain Region and Connectivity criteria and explore the connections of a single cell, specified by its segment ID, by clicking the 'Explore Single Cell's Connections From Cell ID' button. Note that the incoming and outgoing synpases displayed for this cell will only be those considered 'legitimate' accoring to the user-specified 'Synaptic Inclusion Criteria'.
+
+# Network Exploration in CREST - Sequential Cell Exploration commands
 
