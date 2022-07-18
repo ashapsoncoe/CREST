@@ -24,9 +24,11 @@ pip install cairocffi==1.3.0
 pip install pycairo==1.20.1
 
 conda install -c conda-forge python-igraph
+
+CREST can then be launched by the following command: python3 ./CREST_v0.15.py
  
 
-# Getting started with proofreading in CREST
+# Proofreading in CREST - Downloading required databases
 
 To proofread in CREST, it is necessary to download an SQL database that supports proofreading of the particular agglomeration and dataset that you wish to proofread.
 
@@ -38,7 +40,7 @@ https://storage.googleapis.com/lichtman-goog/Alex/agg20200916c3_crest_proofreadi
 
 (files may be large and take several hours to download, depending on the size of the dataset)
  
-# Launching a proofreading session in CREST
+# Proofreading in CREST - Launching a session
 
 Once the CREST user interface has launched, the user should take the following steps to launch a CREST proofreading session:
 
@@ -46,9 +48,9 @@ Once the CREST user interface has launched, the user should take the following s
 
 (2) Click the 'Select Save Folder' to select a folder where the files for each proofread object will be saved
 
-(3) Enter 'Cell Structures' that you may wish to correct in each object - for example; axon, dendrite and cell body
+(3) Enter 'Cell Structures', separated by commas, that you may wish to correct in each object - for example; axon, dendrite and cell body
 
-(4) Enter 'End Point Types' that you may wish to use - these would be reasons why you would stop proofreading a particular branch of an object - for example; exit volume, artefact, and natural end
+(4) Enter 'End Point Types', separated by commas, that you may wish to use - these would be reasons why you would stop proofreading a particular branch of an object - for example; exit volume, artefact, and natural end
 
 (5) Optionally, enter a maximum number of base segments that should be added to the biological object from one agglomerated segment
 
@@ -68,8 +70,26 @@ Once a file is present locally for all cells that are to be proofread, CREST wil
 
 Upon first ever use of the CREST proofreader on a given machine, you will be required to log in to neuroglancer with a google account and refresh the page.
 
-# Proofreading in CREST - principles
+# Proofreading in CREST - Principles
 
 A biological object / cell is considered proofread when all of its constituent base segments are selected, and no base segments that do not belong to it are selected.
 
-To facilitate efficient proofreading, whenever a user adds on a base segment
+CREST ensures that all of the included base segments at any stage of proofreading the object, are joined to one another in one connected component (i.e. form a graph)
+
+To facilitate efficient correction of split errors, whenever a user adds on a base segment, all base segments that belong to that base segment's parent agglomeration segment are added on simultaneously.
+
+To facilitate efficient correction of merge errors, whenever a user removes a base segment, all base segments on the 'other side' of that base segment with respect to an 'anchor segment' (which is always displayed in blue), are removed. In other words, when a base segment is removed, if this act splits the underlying base segment graph into multiple connected components, all connected components which do not contain the anchor segment are also removed. 
+
+When proofreading complex objects / cells, it can become difficult and fatiguing for the user to remember which branches he/she has corrected. This can lead to studying a branch that one has corrected, only to find that it is already complete, wasting time. 
+
+To avoid this, CREST allows the user to mark all base segments on the other side of any given base segment (with respect to the anchor segment), in a given colour. In other words, to mark all of a neurite branch and its sub-branches downstream of any given point, in colour. This provides a quick visual confirmation of which branhes of the cell are complete and do not need to be revisited. 
+
+Additionally, the colour to be used corresponds to a specific 'cell structure' specified by the user in the CREST GUI (see section 'Proofreading in CREST - Launching a session'). This has the added benefit of recording which cell structure (e.g. axon, dendrite, cell body) each base segment belongs to, and the running count of each category, including 'unknown' base segments, which are shown in grey, is displayed in the bottom left of the neuroglancer interface.
+
+When proofreading to the end of a branch of a cell, the user may wish to record, with a point, why it has become necessary to stop proofreading. CREST allows points to be marked in any of the categories specified as 'End Point Types' (see section 'Proofreading in CREST - Launching a session').
+
+# Proofreading in CREST - User commands
+
+
+
+
