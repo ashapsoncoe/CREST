@@ -87,21 +87,14 @@ When proofreading to the end of a branch of a cell, the user may wish to record,
 
 # Proofreading in CREST - User commands
 
-Right click: change location
-
-Mouse wheel: scroll through EM panels or zoom in/out of 3D panel
-
-Double left click: add or remove a base segment (see 'Principles' above for more details)
-
-Alt + left click: mark a branch and its sub-branches in colour and as members of a specified cell structure
-
-C: change the selected colour and corresponding cell structure to mark branches as (displayed in bottom left of screen)
-
-Control + left click: mark the end of a branch with a specific End Point Type, or mark a base segment merger
-
-P: change the selected End Point Type (including a category to mark base segment mergers)
-
-Shift + right click: select a new 'Anchor segment'
+- Right click: change location
+- Mouse wheel: scroll through EM panels or zoom in/out of 3D panel
+- Double left click: add or remove a base segment (see 'Principles' above for more details)
+- Alt + left click: mark a branch and its sub-branches in colour and as members of a specified cell structure
+- C: change the selected colour and corresponding cell structure to mark branches as (displayed in bottom left of screen)
+- Control + left click: mark the end of a branch with a specific End Point Type, or mark a base segment merger
+- P: change the selected End Point Type (including a category to mark base segment mergers)
+- Shift + right click: select a new 'Anchor segment'
 
 # Proofreading in CREST - Saving a cell
 
@@ -127,11 +120,9 @@ https://storage.cloud.google.com/lichtman-goog/Alex/sqlite_databases/CREST_brows
 
 Once the CREST user interface has launched, the user should take the following steps to launch a CREST network exploration session:
 
-(1) Click the 'Select Synaptic Database' button to select a downloaded synapse assembly database. This will populate the Cell Types, Brain Regions and Synaptic Inclusion Criteria columns.
-
-(2) Each synapse in the dataset will have an excitatory/inhibitory type, a pre-synaptic structure (mostly axonal) and a post-synaptic structure (mostly dendritic). The user must decide what he/she wants to consider as a legitimate synapse for the purposes of exploring the dataset, and select the individual criteria in each of these three categories under the 'Synaptic Inclusion Criteria' columns. If none are selected, then all will be considered to have been selected in each catergory.
-
-(3) Every biological object in the dataset will have a cell type (which may include neurite fragments), as well as a brain region (for example, a cortical layer). The user must then indicate which objects they want to include in their subsequent query, by selecting desired types and regions under the 'Cell Types' and 'Brain Regions' columns. If none are selected, then all will be considered to have been selected in both cases.
+- (1) Click the 'Select Synaptic Database' button to select a downloaded synapse assembly database. This will populate the Cell Types, Brain Regions and Synaptic Inclusion Criteria columns.
+- (2) Each synapse in the dataset will have an excitatory/inhibitory type, a pre-synaptic structure (mostly axonal) and a post-synaptic structure (mostly dendritic). The user must decide what he/she wants to consider as a legitimate synapse for the purposes of exploring the dataset, and select the individual criteria in each of these three categories under the 'Synaptic Inclusion Criteria' columns. If none are selected, then all will be considered to have been selected in each catergory.
+- (3) Every biological object in the dataset will have a cell type (which may include neurite fragments), as well as a brain region (for example, a cortical layer). The user must then indicate which objects they want to include in their subsequent query, by selecting desired types and regions under the 'Cell Types' and 'Brain Regions' columns. If none are selected, then all will be considered to have been selected in both cases.
 
 # Network Exploration in CREST - Launching a Network Path Exploration session
 
@@ -139,9 +130,8 @@ The Network Path Exploration mode allows the user to generate a connectome forme
 
 Additonally, the user may further refine the connectome generated, by specifying two further criteria:
 
-(1) Min Synapses Per Connection: Where a connection is all of the synapses between a pair of cells, only connections of at least the number of synapses specified will be included in the connectome.
-
-(2) Min Path Length From Displayed Cells: Only cells giving rise to an outgoing path of at least this length will be displayed in neuroglancer. The underlying connectome will not be affected by this setting. This enables the user to identify paths of a certain minimum length.
+- (1) Min Synapses Per Connection: Where a connection is all of the synapses between a pair of cells, only connections of at least the number of synapses specified will be included in the connectome.
+- (2) Min Path Length From Displayed Cells: Only cells giving rise to an outgoing path of at least this length will be displayed in neuroglancer. The underlying connectome will not be affected by this setting. This enables the user to identify paths of a certain minimum length.
 
 Once these settings have been set, the user should click the button 'Start Network Path Exploration', upon which CREST will generate the connectome meeting the criteria set above. 
 
@@ -176,10 +166,10 @@ The key C will reset the session.
 
 The Sequential Cell Exploration mode allows the user to select all cells / biological objects meeting the region and type criteria specified (see 'Network Exploration in CREST - Selecting synapse and cell types'), as well as several additional criteria related to the pre-synaptic and post-synaptic connectivity of the cell:
 
-(1) Min Total Synapses Given - only cells making at least this many outgoing synapses in total will be included
-(2) Min Total Synapses Received - only cells receiving at least this many incoming synapses in total will be included
-(3) Min Synapses To At Least One Partner - only cells making at least this many synapses with at least one post-synaptic partner will be included
-(4) Min Synapses From At Least One Partner - only cells receiving at least this many synapses with at least one pre-synaptic partner will be included
+- (1) Min Total Synapses Given - only cells making at least this many outgoing synapses in total will be included
+- (2) Min Total Synapses Received - only cells receiving at least this many incoming synapses in total will be included
+- (3) Min Synapses To At Least One Partner - only cells making at least this many synapses with at least one post-synaptic partner will be included
+- (4) Min Synapses From At Least One Partner - only cells receiving at least this many synapses with at least one pre-synaptic partner will be included
 
 Note that these criteria will make use of counts of synpases, which in turn are determined by what the user wishes to include as a 'legitimate synapse' through the Synaptic Inclusion Criteria (see 'Network Exploration in CREST - Selecting synapse and cell types').
 
