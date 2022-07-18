@@ -46,17 +46,12 @@ https://storage.googleapis.com/lichtman-goog/Alex/agg20200916c3_crest_proofreadi
 
 Once the CREST user interface has launched, the user should take the following steps to launch a CREST proofreading session:
 
-(1) Click the 'Select Agglomeration Database' button to select a downloaded agglomeration database
-
-(2) Click the 'Select Save Folder' to select a folder where the files for each proofread object will be saved
-
-(3) Enter 'Cell Structures', separated by commas, that you may wish to correct in each object - for example; axon, dendrite and cell body
-
-(4) Enter 'End Point Types', separated by commas, that you may wish to use - these would be reasons why you would stop proofreading a particular branch of an object - for example; exit volume, artefact, and natural end
-
-(5) Optionally, enter a maximum number of base segments that should be added to the biological object from one agglomerated segment
-
-(6) A CREST proofreading session can then be launched with one of three buttons, depending on what is desired:
+- (1) Click the 'Select Agglomeration Database' button to select a downloaded agglomeration database
+- (2) Click the 'Select Save Folder' to select a folder where the files for each proofread object will be saved
+- (3) Enter 'Cell Structures', separated by commas, that you may wish to correct in each object - for example; axon, dendrite and cell body
+- (4) Enter 'End Point Types', separated by commas, that you may wish to use - these would be reasons why you would stop proofreading a particular branch of an object for example; exit volume, artefact, and natural end 
+- (5) Optionally, enter a maximum number of base segments that should be added to the biological object from one agglomerated segment
+- (6) A CREST proofreading session can then be launched with one of three buttons, depending on what is desired:
 
 'Proofread Batch of Cells from List' - to select a .json format list of base or agglomeration segment IDs that you wish to proofread
 
