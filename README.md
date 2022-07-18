@@ -91,16 +91,28 @@ When proofreading to the end of a branch of a cell, the user may wish to record,
 # Proofreading in CREST - User commands
 
 Right click: change location
+
 Mouse wheel: scroll through EM panels or zoom in/out of 3D panel
+
 Double left click: add or remove a base segment (see 'Principles' above for more details)
+
 Alt + left click: mark a branch and its sub-branches in colour and as members of a specified cell structure
+
 C: change the selected colour and corresponding cell structure to mark branches as (displayed in bottom left of screen)
+
 Control + left click: mark the end of a branch with a specific End Point Type, or mark a base segment merger
+
 P: change the selected End Point Type (including a category to mark base segment mergers)
+
 Shift + right click: select a new 'Anchor segment'
 
 # Proofreading in CREST - Saving a cell
 
+Once a cell is complete, the user should click the button 'Save Locally and to Cloud and Finish'. This will save a date and time-stamped json file with the base segments, their cell structure categories, the marked points, underlying base segment graph, and added graph edges, to the users local computer, as well as to a specific cloud storage site associated with this dataset. 
+
+This ensures that all members of teh proofreading community can benefit from the proofreading efforts of one another, whiel preventing anyone's particular proofread version of a cell from overwriting another user's version.
+
+The cell can also be saved locally before complete, by clicking the button 'Save Locally and Continue'. This will not save the file to the cloud but only locally. This allows an incomplete cell to be continued at a later date.
 
 
 
