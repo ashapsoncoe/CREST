@@ -1,5 +1,7 @@
 # CREST
 Connectome Reconstruction and Exploration Simple Tool, or CREST, is a simple GUI tool that enables users to (1) proofread biological objects and (2) identify individual network pathways, connections and cell types of interest, in the Neuroglancer interface.
+
+CREST is written in python and makes extensive use of the Neuroglancer Python API.
  
 
 # Installing CREST - Windows
@@ -110,11 +112,9 @@ Shift + right click: select a new 'Anchor segment'
 
 Once a cell is complete, the user should click the button 'Save Locally and to Cloud and Finish'. This will save a date and time-stamped json file with the base segments, their cell structure categories, the marked points, underlying base segment graph, and added graph edges, to the users local computer, as well as to a specific cloud storage site associated with this dataset. 
 
-This ensures that all members of teh proofreading community can benefit from the proofreading efforts of one another, whiel preventing anyone's particular proofread version of a cell from overwriting another user's version.
+This ensures that all members of the proofreading community can benefit from the proofreading efforts of one another, while preventing anyone's particular proofread version of a cell from overwriting another user's version.
 
 The cell can also be saved locally before complete, by clicking the button 'Save Locally and Continue'. This will not save the file to the cloud but only locally. This allows an incomplete cell to be continued at a later date.
-
-
 
 # Network Exploration in CREST - Downloading required databases
 
@@ -128,4 +128,30 @@ https://storage.cloud.google.com/lichtman-goog/Alex/sqlite_databases/CREST_brows
 
 (files may be large and take several hours to download, depending on the size of the dataset)
 
-# Network Exploration in CREST - Downloading required databases
+# Network Exploration in CREST - Selecting synapse and cell types
+
+Once the CREST user interface has launched, the user should take the following steps to launch a CREST network exploration session:
+
+(1) Click the 'Select Synaptic Database' button to select a downloaded synapse assembly database. This will populate the Cell Types, Brain Regions and Synaptic Inclusion Criteria columns.
+
+(2) Each synapse in the dataset will have an excitatory/inhibitory type, a pre-synaptic structure (mostly axonal) and a post-synaptic structure (mostly dendritic). The user must decide what he/she wants to consider as a legitimate synapse for the purposes of exploring the dataset, and select the individual criteria in each of these three categories under the 'Synaptic Inclusion Criteria' columns.
+
+(3) Every biological object in the dataset will have a cell type (which may include neurite fragments), as well as a brain region (for example, a cortical layer). The user must then indicate which objects they want to include in their subsequent query, by selecting desired types and regions under the 'Cell Types' and 'Brain Regions' columns.
+
+# Network Exploration in CREST - Launching a Network Path Exploration session
+
+The Network Path Exploration mode allows the user to generate a connectome formed only of the biological objects meeting the criteria specified under the 'Cell Types' and 'Brain Regions' columns, and only of the synapses between these objects meeting the criteria specified under the 'Synaptic Inclusion Criteria' columns.
+
+Additonally, the user may further refine the connectome generated, by specifying two further criteria:
+
+(1) Min Synapses Per Connection: Where a connection is all of the synapses between a pair of cells, only connections of at least the number of synapses specified will be included in the connectome.
+
+(2) Min Path Length From Displayed Cells: Only cells giving rise to an outgoing path of at least this length will be displayed in neuroglancer. The underlying connectome will not be affected by this setting. This enables the user to identify paths of a certain minimum length.
+
+Once these settings have been set, the user should click the button 'Start Network Path Exploration', upon which CREST will generate the connectome meeting the criteria set above. 
+
+CREST will then open a neuroglancer link in your default browser (chrome is reccomended for your default browser choice) displaying all the cells giving rise to a path of at least the length specified by the 'Min Path Length From Displayed Cells' value. If the user wishes to see all of the cells included in the generated connectome, they can set this value to 1.
+
+Upon first ever use of CREST on a given machine, you will be required to log in to neuroglancer with a google account and refresh the page.
+
+# Network Exploration in CREST - Launching a Network Path Exploration session
