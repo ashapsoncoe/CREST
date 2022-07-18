@@ -1,5 +1,5 @@
 # CREST
-Connectome Reconstruction and Exploration Simple Tool, or CREST, is a simple GUI tool that enables users to (1) proofread biological objects and (2) identify individual connection and cell types of interest, in the Neuroglancer interface.
+Connectome Reconstruction and Exploration Simple Tool, or CREST, is a simple GUI tool that enables users to (1) proofread biological objects and (2) identify individual network pathways, connections and cell types of interest, in the Neuroglancer interface.
  
 
 # Installing CREST - Windows
@@ -90,6 +90,30 @@ When proofreading to the end of a branch of a cell, the user may wish to record,
 
 # Proofreading in CREST - User commands
 
+Right click: change location
+Mouse wheel: scroll through EM panels or zoom in/out of 3D panel
+Double left click: add or remove a base segment (see 'Principles' above for more details)
+Alt + left click: mark a branch and its sub-branches in colour and as members of a specified cell structure
+C: change the selected colour and corresponding cell structure to mark branches as (displayed in bottom left of screen)
+Control + left click: mark the end of a branch with a specific End Point Type, or mark a base segment merger
+P: change the selected End Point Type (including a category to mark base segment mergers)
+Shift + right click: select a new 'Anchor segment'
+
+# Proofreading in CREST - Saving a cell
 
 
 
+
+# Network Exploration in CREST - Downloading required databases
+
+To explore neural networks in CREST, it is necessary to download an SQL database that supports browsing of the particular synapse assembly and dataset that you wish to explore.
+
+At present the following network exploration databases are available for download:
+
+h01 dataset, goog14r0s5c3_spinecorrected synapse assembly: 
+
+https://storage.cloud.google.com/lichtman-goog/Alex/sqlite_databases/CREST_browsing_database_goog14r0s5c3_spinecorrected_july2022.db
+
+(files may be large and take several hours to download, depending on the size of the dataset)
+
+# Network Exploration in CREST - Downloading required databases
