@@ -205,5 +205,7 @@ Any saved state can subsequently be re-loaded (but only to be viewed - further n
 # Source files
 
 Python scripts used to make proofreading and network path browsing databases are available in this repository
+
 The current CREST python script is available in this respository
+
 The CREST standalone executable was created using pyinstaller from the CREST python script, using the spec file included in this repository
