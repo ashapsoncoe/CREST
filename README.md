@@ -154,4 +154,24 @@ CREST will then open a neuroglancer link in your default browser (chrome is recc
 
 Upon first ever use of CREST on a given machine, you will be required to log in to neuroglancer with a google account and refresh the page.
 
-# Network Exploration in CREST - Launching a Network Path Exploration session
+# Network Exploration in CREST - Network Path Exploration commands
+
+Network Path Exploration has two main modes for exploring the connections from any given cell:
+
+ALT + LEFT CLICK on a given cell:
+- This will allow the user to browse all outgoing and incoming connections from the cell, over multiple generations
+- LEFT arrow key will display the pre-synaptic inputs to the selected cell, and if pressed again their inputs, and so on.
+- RIGHT arrow key will display the post-synaptic outputs from the selected cell, and if pressed again their outputs, and so on. 
+- When two generations are shown, synapses linking them will be automatically shown as point annotations
+- When one post- or pre-synaptic generation is shown, the user can press the DOWN arrow key to view all individual paths from the initially selected cell to this generation. 
+- RIGHT and LEFT will now allow the user to look at each individual path in turn. UP will return to moving through generations rather than individual paths.
+- For each individual path, synapses will be shown as point annotations, with synapses that 'skip' generations indicated by the label 'ff' and those that form connections in the opposite direction to the path indicated by the label 'fb'.
+- Upon identifying an individual path of interest, the user can press the DOWN arrow key to view each cell member of the path one at a time, in order, navigating again with the RIGHT and LEFT arrow keys. UP now returns the user to moving through individual paths rather than members of the given path.
+
+SHIFT + LEFT CLICK on a given cell:
+- This will show all individual paths of at least the length specified by the 'Min Path Length From Displayed Cells' value, originating from the selected cell
+- The RIGHT and LEFT arrow keys allow the user to navigate between individual paths. 
+- Upon identifying an individual path of interest, the user can press the DOWN arrow key to view each cell member of the path one at a time, in order, navigating again with the RIGHT and LEFT arrow keys. UP now returns the user to moving through individual paths rather than members of the given path.
+
+In each of these modes, the part of the connectome being explored is continously plotted in a simplified 2D form in the 'Figures' tab of the CREST GUI. Each cell is represented by a circle, connections between them are represeneted by arrows, with the thickness of the arrow proportional to the number of synapses (strength) of that connection. The initial cell selected is shown as an orange circle, and each circle has a number indicating its post-synaptic (positive numbers) or pre-synaptic (negative numbers) generation with respect to the initially selected cell. Cells and connections currently being displayed in the neuroglancer window are shown in black, with their segment ID displayed next to them, whereas those cells and connections not currently displayed are greyed out.
+
