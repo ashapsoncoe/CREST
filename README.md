@@ -25,7 +25,7 @@ pip install matplotlib==3.5.1 / 3.2.1
 
 pip install cairocffi==1.3.0
 
-pip install pycairo==1.20.1
+pip install pycairo==1.20.1 ### On some setups, 'brew install cairo' may be required prior to this step
 
 conda install -c conda-forge google-cloud-storage
 
