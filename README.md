@@ -27,6 +27,8 @@ pip install cairocffi==1.3.0
 
 pip install pycairo==1.20.1
 
+conda install -c conda-forge google-cloud-storage
+
 conda install -c conda-forge python-igraph
 
 CREST can then be launched by the following command: python3 ./CREST_v0.15.py
