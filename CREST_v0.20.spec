@@ -11,7 +11,7 @@ datas += tmp_ret[0]; binaries += tmp_ret[1]; hiddenimports += tmp_ret[2]
 block_cipher = None
 
 
-a = Analysis(['C:\\work\\neuroglancer_glancer\\scripts\\CREST_v0.16.py'],
+a = Analysis(['C:\\work\\neuroglancer_glancer\\scripts\\CREST_v0.20.py'],
              pathex=['C:\\Users\\alexs\\anaconda3\\envs\\env3\\Lib\\site-packages'],
              binaries=binaries,
              datas=datas,
@@ -50,7 +50,7 @@ exe = EXE(pyz,
           splash, 
           splash.binaries,
           [],
-          name='v0.16',
+          name='v0.20',
           debug=False,
           bootloader_ignore_signals=False,
           strip=False,
