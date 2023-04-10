@@ -15,17 +15,19 @@ https://storage.cloud.google.com/crest_program/v0.16.exe
 
 For Mac, CREST can only currently be run as a python file from the command line. 
 
-To get set up quickly, it is recommended that Anaconda 3.9.7 is installed, and the following command lines entered in an Anaconda environment:
+To get set up quickly, it is recommended that Anaconda 3.9.7 is installed, as well as either MacPorts (https://guide.macports.org/#installing.macports) or HomeBrew (https://brew.sh/) and the following command lines entered in an Anaconda environment:
 
 pip install neuroglancer==2.22
 
 pip install scipy==1.7.3
 
-pip install matplotlib==3.5.1 / 3.2.1
+pip install matplotlib==3.5.1
 
 pip install cairocffi==1.3.0
 
-pip install pycairo==1.20.1 ### On some setups, 'brew install cairo' may be required prior to this step
+brew install cairo OR port install cairo
+
+pip install pycairo==1.20.1 
 
 conda install -c conda-forge google-cloud-storage
 
