@@ -8,32 +8,12 @@ CREST is written in Python and makes extensive use of the Neuroglancer Python AP
 
 For Windows, no installation is necessary - CREST is available as a standalone executable file, which can be downloaded from here: 
 
-https://storage.cloud.google.com/crest_program/v0.16.exe
+https://storage.cloud.google.com/crest_program/CREST_v0.22.exe
  
 
 # Installing CREST - Mac
 
-For Mac, CREST can only currently be run as a python file from the command line. 
-
-To get set up quickly, it is recommended that Anaconda 3.9.7 is installed, as well as either MacPorts (https://guide.macports.org/#installing.macports) or HomeBrew (https://brew.sh/) and the following command lines entered in an Anaconda environment:
-
-pip install neuroglancer==2.22
-
-pip install scipy==1.7.3
-
-pip install matplotlib==3.5.1
-
-pip install cairocffi==1.3.0
-
-brew install cairo OR port install cairo
-
-pip install pycairo==1.20.1 
-
-conda install -c conda-forge google-cloud-storage
-
-conda install -c conda-forge python-igraph
-
-CREST can then be launched by the following command: python3 ./CREST_v0.15.py
+CREST is not yet available as an application for Mac. Advanced users may run the python CREST_v0.22.py script above, but this has not been extensively tested
  
 
 # Proofreading in CREST - Downloading required databases
