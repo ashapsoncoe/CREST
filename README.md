@@ -13,7 +13,7 @@ https://storage.cloud.google.com/crest_program/CREST_v0.22.exe
 
 # Installing CREST - Mac
 
-CREST is not yet available as an application for Mac. Advanced users may run the python CREST_v0.22.py script above, but this has not been extensively tested
+CREST is not yet available as an application for Mac. Advanced users may run the python CREST_v0.22.py script above on Mac systems, but this has not been extensively tested.
  
 
 # Proofreading in CREST - Downloading required databases
