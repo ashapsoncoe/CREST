@@ -8,7 +8,7 @@ CREST is written in Python and makes extensive use of the Neuroglancer Python AP
 
 For Windows, no installation is necessary - CREST is available as a standalone executable file, which can be downloaded from here: 
 
-https://storage.cloud.google.com/crest_program/CREST_v0.22.exe
+https://storage.cloud.google.com/h01_paper_public_files/CREST_v0.22.exe
  
 
 # Installing CREST - Mac
@@ -22,9 +22,13 @@ To proofread in CREST, it is necessary to download an SQL database that supports
 
 At present the following proofreading databases are available for download:
 
-h01 dataset, agg20200916c3 agglomeration: 
+h01 dataset, 'c3' agglomeration: 
 
-https://storage.cloud.google.com/crest_program/agg20200916c3_crest_proofreading_database.db 
+https://storage.cloud.google.com/h01_paper_public_files/agg20200916c3_crest_proofreading_database.db
+
+h01 dataset, 'c2' agglomeration: 
+
+https://storage.cloud.google.com/h01_paper_public_files/agg20201123c2_crest_proofreading_database.db
 
 (files may be large and take several hours to download, depending on the size of the dataset)
  
