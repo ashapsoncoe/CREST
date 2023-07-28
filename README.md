@@ -22,7 +22,7 @@ To explore neural networks in CREST, it is necessary to download an SQL database
 
 At present the following network exploration databases are available for download:
 
-h01 dataset, goog14r0s5c3_spinecorrected synapse assembly: 
+h01 dataset, goog14r0s5c3_eirepredict2023 synapse assembly: 
 
 [https://storage.cloud.google.com/crest_program/CREST_browsing_database_goog14r0s5c3_spinecorrected_july2022.db](https://storage.cloud.google.com/h01_paper_public_files/CREST_browsing_database_goog14r0s5c3_eirepredict2023.db)
 
