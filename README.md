@@ -24,7 +24,7 @@ At present the following network exploration databases are available for downloa
 
 h01 dataset, goog14r0s5c3_eirepredict2023 synapse assembly: 
 
-[https://storage.cloud.google.com/crest_program/CREST_browsing_database_goog14r0s5c3_spinecorrected_july2022.db](https://storage.cloud.google.com/h01_paper_public_files/CREST_browsing_database_goog14r0s5c3_eirepredict2023.db)
+[https://storage.cloud.google.com/crest_program/CREST_browsing_database_goog14r0s5c3_eirepredict2023.db](https://storage.cloud.google.com/h01_paper_public_files/CREST_browsing_database_goog14r0s5c3_eirepredict2023.db)
 
 (files may be large and take several hours to download, depending on the size of the dataset)
 
