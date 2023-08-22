@@ -8,7 +8,7 @@ CREST is written in Python and makes extensive use of the Neuroglancer Python AP
 
 For Windows, no installation is necessary - CREST is available as a standalone executable file, which can be downloaded from here: 
 
-[https://storage.cloud.google.com/h01_paper_public_files/CREST_v0.23.exe]
+https://storage.cloud.google.com/h01_paper_public_files/CREST_v0.23.exe
 
  
 
