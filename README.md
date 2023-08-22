@@ -14,7 +14,7 @@ https://storage.cloud.google.com/h01_paper_public_files/CREST_v0.23.exe
 
 # Installing CREST - Mac
 
-CREST is not yet available as an application for Mac. Advanced users may run the python CREST_v0.22.py script above on Mac systems, but this has not been extensively tested.
+CREST is not yet available as an application for Mac. Advanced users may run the python CREST_v0.23.py script above on Mac systems, but this has not been extensively tested.
 
 
 # Network Exploration in CREST - Downloading required databases
