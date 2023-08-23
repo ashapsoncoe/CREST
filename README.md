@@ -17,7 +17,10 @@ https://storage.cloud.google.com/h01_paper_public_files/CREST_v0.23.exe
 CREST is not yet available as an application for Mac. Advanced users may run the python CREST_v0.23.py script above on Mac systems, but this has not been extensively tested.
 
 
+
 # Network Exploration in CREST - Downloading required databases
+
+[Downloading CREST and databases video](https://www.youtube.com/watch?v=xErVpJKY0F0&list=PLQ7HdIJG6wbKhAweb_M409OComyPntaWb&index=1)
 
 To explore neural networks in CREST, it is necessary to download an SQL database that supports browsing of the particular synapse assembly and dataset that you wish to explore.
 
@@ -31,6 +34,11 @@ h01 dataset, goog14r0s5c3_eirepredict2023 synapse assembly:
 
 # Network Exploration in CREST - Selecting synapse and cell types
 
+
+[Launching CREST video](https://www.youtube.com/watch?v=fHkkmbcDXfU&list=PLQ7HdIJG6wbKhAweb_M409OComyPntaWb&index=2)
+
+[Filtering synapse types in CREST video](https://www.youtube.com/watch?v=qZw64zrV6R8&list=PLQ7HdIJG6wbKhAweb_M409OComyPntaWb&index=3)
+
 Once the CREST user interface has launched, the user should take the following steps to launch a CREST network exploration session:
 
 - (1) Click the 'Select Synaptic Database' button to select a downloaded synapse assembly database. This will populate the Cell Types, Brain Regions and Synaptic Inclusion Criteria columns.
@@ -38,6 +46,8 @@ Once the CREST user interface has launched, the user should take the following s
 - (3) Every biological object in the dataset will have a cell type (which may include neurite fragments), as well as a brain region (for example, a cortical layer). The user must then indicate which objects they want to include in their subsequent query, by selecting desired types and regions under the 'Cell Types' and 'Brain Regions' columns. If none are selected, then all will be considered to have been selected in both cases.
 
 # Network Exploration in CREST - Launching a Network Path Exploration session
+
+[Path exploration mode in CREST video](https://www.youtube.com/watch?v=qZw64zrV6R8&list=PLQ7HdIJG6wbKhAweb_M409OComyPntaWb&index=4)
 
 The Network Path Exploration mode allows the user to generate a connectome formed only of the biological objects meeting the criteria specified under the 'Cell Types' and 'Brain Regions' columns, and only of the synapses between these objects meeting the criteria specified under the 'Synaptic Inclusion Criteria' columns.
 
@@ -76,6 +86,8 @@ In each of these modes, the part of the connectome being explored is continuousl
 The key C will reset the session.
 
 # Network Exploration in CREST - Launching a Sequential Cell Exploration session
+
+[Single cell connections exploration mode in CREST video](https://www.youtube.com/watch?v=qZw64zrV6R8&list=PLQ7HdIJG6wbKhAweb_M409OComyPntaWb&index=5)
 
 The Sequential Cell Exploration mode allows the user to select all cells / biological objects meeting the region and type criteria specified (see 'Network Exploration in CREST - Selecting synapse and cell types'), as well as several additional criteria related to the pre-synaptic and post-synaptic connectivity of the cell:
 
