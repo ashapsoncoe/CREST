@@ -2,25 +2,23 @@
 Connectome Reconstruction and Exploration Simple Tool, or CREST, is a simple GUI tool that enables users to (1) proofread biological objects and (2) identify individual network pathways, connections and cell types of interest, in the Neuroglancer interface.
 
 CREST is written in Python and makes extensive use of the Neuroglancer Python API.
- 
 
 # Installing CREST - Windows
+
+[Demonstration of downloading CREST and databases](https://www.youtube.com/watch?v=xErVpJKY0F0&list=PLQ7HdIJG6wbKhAweb_M409OComyPntaWb&index=1)
 
 For Windows, no installation is necessary - CREST is available as a standalone executable file, which can be downloaded from here: 
 
 https://storage.cloud.google.com/h01_paper_public_files/CREST_v0.23.exe
 
+[Demonstration of Launching CREST](https://www.youtube.com/watch?v=fHkkmbcDXfU&list=PLQ7HdIJG6wbKhAweb_M409OComyPntaWb&index=2)
  
-
 # Installing CREST - Mac
 
 CREST is not yet available as an application for Mac. Advanced users may run the python CREST_v0.23.py script above on Mac systems, but this has not been extensively tested.
 
 
-
 # Network Exploration in CREST - Downloading required databases
-
-[Downloading CREST and databases video](https://www.youtube.com/watch?v=xErVpJKY0F0&list=PLQ7HdIJG6wbKhAweb_M409OComyPntaWb&index=1)
 
 To explore neural networks in CREST, it is necessary to download an SQL database that supports browsing of the particular synapse assembly and dataset that you wish to explore.
 
@@ -34,10 +32,7 @@ h01 dataset, goog14r0s5c3_eirepredict2023 synapse assembly:
 
 # Network Exploration in CREST - Selecting synapse and cell types
 
-
-[Launching CREST video](https://www.youtube.com/watch?v=fHkkmbcDXfU&list=PLQ7HdIJG6wbKhAweb_M409OComyPntaWb&index=2)
-
-[Filtering synapse types in CREST video](https://www.youtube.com/watch?v=qZw64zrV6R8&list=PLQ7HdIJG6wbKhAweb_M409OComyPntaWb&index=3)
+[Demonstration of filtering synapse types in CREST](https://www.youtube.com/watch?v=qZw64zrV6R8&list=PLQ7HdIJG6wbKhAweb_M409OComyPntaWb&index=3)
 
 Once the CREST user interface has launched, the user should take the following steps to launch a CREST network exploration session:
 
@@ -47,7 +42,7 @@ Once the CREST user interface has launched, the user should take the following s
 
 # Network Exploration in CREST - Launching a Network Path Exploration session
 
-[Path exploration mode in CREST video](https://www.youtube.com/watch?v=qZw64zrV6R8&list=PLQ7HdIJG6wbKhAweb_M409OComyPntaWb&index=4)
+[Demonstration of Path Exploration mode in CREST](https://www.youtube.com/watch?v=qZw64zrV6R8&list=PLQ7HdIJG6wbKhAweb_M409OComyPntaWb&index=4)
 
 The Network Path Exploration mode allows the user to generate a connectome formed only of the biological objects meeting the criteria specified under the 'Cell Types' and 'Brain Regions' columns, and only of the synapses between these objects meeting the criteria specified under the 'Synaptic Inclusion Criteria' columns.
 
@@ -87,7 +82,7 @@ The key C will reset the session.
 
 # Network Exploration in CREST - Launching a Sequential Cell Exploration session
 
-[Single cell connections exploration mode in CREST video](https://www.youtube.com/watch?v=qZw64zrV6R8&list=PLQ7HdIJG6wbKhAweb_M409OComyPntaWb&index=5)
+[Demonstration of Single cell connections exploration mode in CREST](https://www.youtube.com/watch?v=qZw64zrV6R8&list=PLQ7HdIJG6wbKhAweb_M409OComyPntaWb&index=5)
 
 The Sequential Cell Exploration mode allows the user to select all cells / biological objects meeting the region and type criteria specified (see 'Network Exploration in CREST - Selecting synapse and cell types'), as well as several additional criteria related to the pre-synaptic and post-synaptic connectivity of the cell:
 
