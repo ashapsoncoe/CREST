@@ -15,7 +15,7 @@ For Windows, no installation is necessary - CREST is available as a standalone e
  
 # Installing CREST - Mac
 
-CREST is not yet available as an application for Mac. Advanced users may run the python CREST_v0.23.py script above on Mac systems, but this has not been extensively tested.
+CREST is not yet available as an application for Mac. Advanced users may run the python CREST_v0.24.py script above on Mac systems, but this has not been extensively tested.
 
 
 # Network Exploration in CREST - Downloading required databases
