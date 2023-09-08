@@ -9,7 +9,7 @@ CREST is written in Python and makes extensive use of the Neuroglancer Python AP
 
 For Windows, no installation is necessary - CREST is available as a standalone executable file, which can be downloaded from here: 
 
-https://storage.cloud.google.com/h01_paper_public_files/CREST_v0.23.exe
+[Click here to download the CREST application](https://storage.cloud.google.com/h01_paper_public_files/CREST_v0.24.exe)
 
 [Demonstration of Launching CREST](https://www.youtube.com/watch?v=fHkkmbcDXfU&list=PLQ7HdIJG6wbKhAweb_M409OComyPntaWb&index=2)
  
@@ -26,7 +26,7 @@ At present the following network exploration databases are available for downloa
 
 h01 dataset, goog14r0s5c3_eirepredict2023 synapse assembly: 
 
-[https://storage.cloud.google.com/crest_program/CREST_browsing_database_goog14r0s5c3_eirepredict2023.db](https://storage.cloud.google.com/h01_paper_public_files/CREST_browsing_database_goog14r0s5c3_eirepredict2023.db)
+[Click here to download CREST_browsing_database_goog14r0s5c3_eirepredict2023.db](https://storage.cloud.google.com/h01_paper_public_files/CREST_browsing_database_goog14r0s5c3_eirepredict2023.db)
 
 (files may be large and take several hours to download, depending on the size of the dataset)
 
@@ -128,11 +128,11 @@ At present the following proofreading databases are available for download:
 
 h01 dataset, 'c3' agglomeration: 
 
-https://storage.cloud.google.com/h01_paper_public_files/agg20200916c3_crest_proofreading_database.db
+[Click here to download agg20200916c3_crest_proofreading_database.db](https://storage.cloud.google.com/h01_paper_public_files/agg20200916c3_crest_proofreading_database.db)
 
 h01 dataset, 'c2' agglomeration: 
 
-https://storage.cloud.google.com/h01_paper_public_files/agg20201123c2_crest_proofreading_database.db
+[Click here to download agg20201123c2_crest_proofreading_database.db](https://storage.cloud.google.com/h01_paper_public_files/agg20201123c2_crest_proofreading_database.db)
 
 (files may be large and take several hours to download, depending on the size of the dataset)
  
