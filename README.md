@@ -6,7 +6,7 @@
 
 3) If you wish to use the cell reconstruction (proofreading) mode of CREST, [click here](https://storage.googleapis.com/h01_paper_public_files/agg20200916c3_crest_proofreading_database.db) to download the database for proofreading using the 'c3' agglomeration of the H01 dataset with CREST. Warning: file is large and may take several hours to download.
 
-4) [Click here](https://www.youtube.com/playlist?list=PLQ7HdIJG6wbKhAweb_M409OComyPntaWb) to view a series of short videos demonstrating how to use the various features of CREST.
+4) [Click here](https://www.youtube.com/playlist?list=PLQ7HdIJG6wbKhAweb_M409OComyPntaWb) to view a series of short videos demonstrating how to use the various features of CREST. Alternatively, written instructions are available below.
 
    
 
