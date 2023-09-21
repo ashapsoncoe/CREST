@@ -1,21 +1,21 @@
+# QUICKSTART
+
+1) Click [here](https://storage.googleapis.com/h01_paper_public_files/CREST_v0.24.exe) to download the latest version of the CREST application. If the Chrome browser warns you that "This file is not commonly downloaded and may be dangerous", select the option to 'keep' the file. No installation is necessary, the application can be launched in Windows by double-clicking on the downloaded CREST file. It is not currently available for Mac.
+
+2) If you wish to use the network exploration mode of CREST, click [here](https://storage.googleapis.com/h01_paper_public_files/CREST_browsing_database_goog14r0s5c3_eirepredict2023.db) to download the latest network exploration database for the H01 dataset to use with CREST.
+
+3) If you wish to use the cell reconstruction (proofreading) mode of CREST click [here](https://storage.googleapis.com/h01_paper_public_files/agg20200916c3_crest_proofreading_database.db) to download the database for proofreading using the 'c3' agglomeration of the H01 dataset with CREST. Warning: file is large and may take several hours to download.
+
+4) Click [here](https://www.youtube.com/playlist?list=PLQ7HdIJG6wbKhAweb_M409OComyPntaWb) to view a series of short videos demonstrating how to use the various features of CREST.
+
+   
+
 # CREST
 Connectome Reconstruction and Exploration Simple Tool, or CREST, is a simple GUI tool that enables users to (1) proofread biological objects and (2) identify individual network pathways, connections and cell types of interest, in the Neuroglancer interface.
 
 CREST is written in Python and makes extensive use of the Neuroglancer Python API.
 
-# Installing CREST - Windows
-
-[Demonstration of downloading CREST and databases](https://www.youtube.com/watch?v=xErVpJKY0F0&list=PLQ7HdIJG6wbKhAweb_M409OComyPntaWb&index=1)
-
-For Windows, no installation is necessary - CREST is available as a standalone executable file, which can be downloaded from here: 
-
-[Click here to download the CREST application](https://storage.googleapis.com/h01_paper_public_files/CREST_v0.24.exe)
-
-[Demonstration of Launching CREST](https://www.youtube.com/watch?v=fHkkmbcDXfU&list=PLQ7HdIJG6wbKhAweb_M409OComyPntaWb&index=2)
- 
-# Installing CREST - Mac
-
-CREST is not yet available as an application for Mac. Advanced users may run the python CREST_v0.24.py script above on Mac systems, but this has not been extensively tested.
+CREST is not yet available as an application for Mac. Advanced users may attempt to run the python CREST_v0.24.py script above on Mac systems, but this has not been extensively tested.
 
 
 # Network Exploration in CREST - Downloading required databases
@@ -32,6 +32,7 @@ h01 dataset, goog14r0s5c3_eirepredict2023 synapse assembly:
 
 # Network Exploration in CREST - Selecting synapse and cell types
 
+[Demonstration of Launching CREST](https://www.youtube.com/watch?v=fHkkmbcDXfU&list=PLQ7HdIJG6wbKhAweb_M409OComyPntaWb&index=2)
 [Demonstration of filtering synapse types in CREST](https://www.youtube.com/watch?v=qZw64zrV6R8&list=PLQ7HdIJG6wbKhAweb_M409OComyPntaWb&index=3)
 
 Once the CREST user interface has launched, the user should take the following steps to launch a CREST network exploration session:
