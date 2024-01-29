@@ -1,6 +1,6 @@
 # QUICKSTART
 
-1) [Click here](https://storage.googleapis.com/h01_paper_public_files/CREST_v0.24.exe) to download the latest version of the CREST application. If the Chrome browser warns you that "This file is not commonly downloaded and may be dangerous", select the option to 'keep' the file. No installation is necessary, the application can be launched in Windows by double-clicking on the downloaded CREST file. It is not currently available for Mac.
+1) [Click here](https://storage.googleapis.com/h01_paper_public_files/CREST_v1.0.exe) to download the latest version of the CREST application. If the Chrome browser warns you that "This file is not commonly downloaded and may be dangerous", select the option to 'keep' the file. No installation is necessary, the application can be launched in Windows by double-clicking on the downloaded CREST file. It is not currently available for Mac.
 
 2) If you wish to use the network exploration mode of CREST, [click here](https://storage.googleapis.com/h01_paper_public_files/CREST_browsing_database_goog14r0s5c3_eirepredict2023.db) to download the latest network exploration database for the H01 dataset to use with CREST.
 
