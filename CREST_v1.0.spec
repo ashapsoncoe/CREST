@@ -13,7 +13,7 @@ datas.append(('C:\\Windows\\SysWOW64\\vcruntime140.dll', '.'))
 block_cipher = None
 
 
-a = Analysis(['C:\\Users\\alexs\\Documents\\h01_work\\SCRIPTS\\crest_scripts\\CREST_v0.24.py'],
+a = Analysis(['C:\\Users\\alexs\\Documents\\h01_work\\SCRIPTS\\crest_scripts\\CREST_v1.0.py'],
              pathex=['C:\\Users\\alexs\\anaconda3\\envs\\env1_from_old_laptop\\Lib\\site-packages'],
              binaries=binaries,
              datas=datas,
