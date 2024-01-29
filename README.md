@@ -15,7 +15,7 @@ Connectome Reconstruction and Exploration Simple Tool, or CREST, is a simple GUI
 
 CREST is written in Python and makes extensive use of the Neuroglancer Python API.
 
-CREST is not yet available as an application for Mac. Advanced users may attempt to run the python CREST_v0.24.py script above on Mac systems, but this has not been extensively tested.
+CREST is not yet available as an application for Mac. Advanced users may attempt to run the python CREST python script above on Mac systems, but this has not been extensively tested.
 
 
 # Network Exploration in CREST - Downloading required databases
